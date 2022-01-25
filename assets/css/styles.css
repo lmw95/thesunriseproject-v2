@@ -6,6 +6,7 @@
     --darkblue: #00313D;
     --darkblue-t: rgba(0, 33, 41, 0.3);
     --lightblue: #9DCBD3;
+    --lightblue-t: rgba(157, 203, 211, 0.3);
 
 }
 
@@ -25,10 +26,15 @@ p {
     font-weight: 400;
 }
 
+i {
+    color: var(--lightblue);
+}
+
 .header-image {
     height: 100vh;
     position: absolute;
     overflow: hidden;
+    z-index: -10;
 }
 
 .video-overlay {
@@ -36,6 +42,7 @@ p {
     height: 100vh;
     background-color: var(--darkblue-t);
     overflow: hidden;
+    z-index: 10;
 }
 
 .my-video {
@@ -55,4 +62,41 @@ p {
     font-weight: 900;
     color: var(--yellow);
     font-size: 1.2em;
+}
+
+.discover-btn {
+    border-radius: 50px;
+    border: 3px solid var(--darkblue);
+    box-shadow: 0 5px 10px rgba(0,0,0,.08), 0 0 5px rgba(0,0,0,.09);
+    color: var(--yellow);
+    letter-spacing: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.discover-btn:hover {
+    border: 3px solid transparent;
+    color: var(--yellow);
+    background-color: var(--darkblue);
+    box-shadow: 0 15px 15px rgba(0,0,0,.08), 0 0 5px rgba(0,0,0,.09);
+}
+
+.header-bottom {
+    bottom: 0;
+}
+
+.icon-wrapper {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: var(--lightblue-t);
+    border: 1px solid var(--lightblue-t);
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-wrapper:hover {
+    border: 1px solid var(--lightblue);
+    transform: translateY(-5px);
 }
