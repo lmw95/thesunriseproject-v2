@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
 
 :root {
     --font: 'Poppins', sans-serif;
     --yellow: #FCC33D;
     --darkblue: #00313D;
-    --darkblue-t: rgba(0, 33, 41, 0.7);
+    --darkblue-t: rgba(0, 33, 41, 0.3);
+    --lightblue: #9DCBD3;
 
 }
 
@@ -12,6 +13,16 @@ h1 {
     font-family: var(--font);
     font-weight: 900;
     color: #FCC33D;
+}
+
+h2 {
+    font-family: var(--font);
+    font-weight: 900;
+}
+
+p {
+    font-family: var(--font);
+    font-weight: 400;
 }
 
 .header-image {
