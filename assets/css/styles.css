@@ -44,3 +44,15 @@ p {
     object-fit: cover;
     overflow: hidden;
 }
+
+.header-text {
+    width: 65%;
+    text-align: justify;
+    color: var(--darkblue);
+}
+
+.header-text span {
+    font-weight: 900;
+    color: var(--yellow);
+    font-size: 1.2em;
+}
